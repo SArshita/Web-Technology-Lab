@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: center;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+        var contentAtTop = document.documentElement.innerHTML;
+        console.log(contentAtTop);
+    </style>
+</head>
+<body>
+
+    <div id="timetable-container">
+        <h2 style="text-align: center;">Weekly Timetable</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>9:00 - 9:55</th>
+                    <th>9:55 - 10:50</th>
+                    <th>10:50 - 11:00</th>
+                    <th>11:00 - 12:00</th>
+                    <th>12:00 - 1:00</th>
+                    <th>1:00 - 2:00</th>
+                    <th>2:00 - 3:00</th>
+                    <th>3:00 - 3:55</th>
+                    <th>3:55 - 4:50</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>CO & 0S</td>
+                    <td>UID</td>
+                    <td rowspan="5">BREAK</td>
+                    <td>CN</td>
+                    <td>CS</td>
+                    <td rowspan="5">LUNCH / BREAK</td>
+                    <td>CN</td>
+                    <td colspan="2">PLACEMENT</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>UID</td>
+                    <td>CS</td>
+                    <td colspan="2">PLACEMENT</td>
+                    <td colspan="2">MINI PROJECT</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Cs</td>
+                    <td>UID</td>
+                    <td>RM</td>
+                    <td>CO & OS</td>
+                    <td>LIBRARY</td>
+                    <td>COUNSELLING</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>CS</td>
+                    <td>RM</td>
+                    <td>UID</td>
+                    <td>CO & OS</td>
+                    <td>IDT</td>
+                    <td colspan="2">OS LAB(B2) / WT LAB(B1)</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>CN</td>
+                    <td>CO & OS</td>
+                    <td colspan="2">OS LAB(B1) / CN LAB(B2)</td>
+                    <td>CN</td>
+                    <td colspan="2">WT LAB(B2) / CN LAB(B1)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+
