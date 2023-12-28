@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style4.css">
+    <title>Event Registration Form</title>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Event Registration Form</h2>
+        <form action="#" method="post">
+            <label for="eventName">Event Name:</label>
+            <input type="text" id="eventName" name="eventName" required>
+
+            <label for="eventDate">Event Date:</label>
+            <input type="date" id="eventDate" name="eventDate" required>
+
+            <div class="flex-container">
+                <div class="flex-item">
+                    <label for="startTime">Start Time:</label>
+                    <input type="time" id="startTime" name="startTime" required>
+                </div>
+
+                <div class="flex-item">
+                    <label for="endTime">End Time:</label>
+                    <input type="time" id="endTime" name="endTime" required>
+                </div>
+            </div>
+
+            <label for="venue">Venue:</label>
+            <input type="text" id="venue" name="venue" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
