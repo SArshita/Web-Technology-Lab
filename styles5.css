@@ -1,0 +1,10 @@
+/* External CSS */
+h1.external {
+    color: aquamarine;
+    text-align: center;
+}
+
+p.external {
+    font-size: 18px;
+    line-height: 1.6;
+}
